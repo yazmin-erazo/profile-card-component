@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap')
+// Layout
+$mobile-width: 375px
+$desktop-width: 1440px
+
+// Colors
+$primary-dark-cyan: hsl(185, 75%, 39%)
+$primary-very-dark-desaturated-blue: hsl(229, 23%, 23%)
+$primary-dark-grayish-blue: hsl(227, 10%, 46%)
+$neutral-dark-gray: hsl(0, 0%, 59%)
+$white: hsl(0, 0%, 100%)
+
+// Typography
+$font-size: 16px
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    background-color: $primary-dark-cyan
+    font-size: $font-size
+    font-family: 'Kumbh Sans', sans-serif
+    background-image: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg')
+    background-position: right 54vw bottom 32vh, left 49vw top 48vh
+    background-repeat: no-repeat, no-repeat
+
+main
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    
+
+.card
+    background: $white
+    box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.504835)
+    border-radius: 15px
+    overflow: hidden
+    max-width: 350px
+    width: 90%
+    text-align: center
+    &__profile
+        padding-top: 2rem
+        position: relative
+        &__image
+            border: 5px solid $white
+            border-radius: 50%
+            position: absolute
+            top: -56px
+            left: 50%
+            transform: translateX(-50%)
+        &__info
+            margin-top: 2rem
+            &__name
+                color: #2e3349
+                font-size: 1.12rem
+                font-weight: 700
+                span
+                    color: $neutral-dark-gray
+                    font-size: 1.12rem
+                    font-weight: 400
+            &__location
+                font-size: 0.875rem
+                color: $neutral-dark-gray
+                margin-top: 8px
+        &__details
+            margin-top: 20px
+            border-top: 1px solid #E8E9EC
+            display: flex
+            justify-content: space-between
+            padding: 1.5rem 3rem
+            &__stat__value
+                color: #2e3349
+                font-weight: 700
+                font-size: 1.1rem
+            &__stat__name
+                font-size: 0.625rem
+                letter-spacing: 1.5px
+                color: #6B7082
+                font-weight: 400
+                margin-top: 9px
